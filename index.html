@@ -1,222 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wail Elyatime | Cybersecurity</title>
-    <meta name="description" content="Wail Elyatime - Cybersecurity Engineering Student. Discover my skills, projects and professional journey.">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #0b1120;
-            color: #e2e8f0;
-            line-height: 1.7;
-        }
-
-        header {
-            padding: 25px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #1e293b;
-        }
-
-        header h2 {
-            color: #38bdf8;
-        }
-
-        nav a {
-            color: #cbd5e1;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        .hero {
-            padding: 100px 8%;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-
-        .hero h1 span {
-            color: #38bdf8;
-        }
-
-        .hero h3 {
-            color: #94a3b8;
-            font-weight: normal;
-            margin-bottom: 25px;
-        }
-
-        .hero p {
-            max-width: 650px;
-            margin: auto;
-            color: #cbd5e1;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 12px 25px;
-            background: #0284c7;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
-
-        section {
-            padding: 60px 8%;
-        }
-
-        section h2 {
-            color: #38bdf8;
-            margin-bottom: 25px;
-            font-size: 30px;
-        }
-
-        .skills, .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #111c30;
-            border: 1px solid #263449;
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        .card h3 {
-            color: #7dd3fc;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            color: #cbd5e1;
-        }
-
-        .contact a {
-            color: #38bdf8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #94a3b8;
-            border-top: 1px solid #1e293b;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 8px;
-            }
-
-            .hero h1 {
-                font-size: 34px;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wail Elyatime | Cybersecurity Engineering Student</title>
+<meta name="description" content="Wail Elyatime (Wail El Yatime) is a cybersecurity engineering student at UPM, Marrakech. SOC, network security and Windows/Linux system administration.">
+<meta name="author" content="Wail Elyatime">
+<meta name="theme-color" content="#060b16">
+<link rel="canonical" href="https://waelelyatime1.github.io/">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Wail Elyatime | Cybersecurity Engineering Student">
+<meta property="og:description" content="Cybersecurity engineering student: SOC, network security and systems administration.">
+<meta property="og:url" content="https://waelelyatime1.github.io/">
+<meta property="og:image" content="https://waelelyatime1.github.io/assets/images/wail.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wail Elyatime | Cybersecurity Engineering Student">
+<meta name="twitter:description" content="Cybersecurity engineering student: SOC, network security and systems administration.">
+<meta name="twitter:image" content="https://waelelyatime1.github.io/assets/images/wail.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Sora:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Wail Elyatime","alternateName":["Wail El Yatime","Wael El Yatime"],"jobTitle":"Cybersecurity Engineering Student","url":"https://waelelyatime1.github.io/","image":"https://waelelyatime1.github.io/assets/images/wail.jpg","alumniOf":{"@type":"CollegeOrUniversity","name":"Université Privée de Marrakech"},"address":{"@type":"PostalAddress","addressRegion":"Marrakech-Safi","addressCountry":"MA"},"sameAs":["https://www.linkedin.com/in/elyatime-wail-4bb508342/","https://github.com/waelelyatime1"]}
+</script>
 </head>
-
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="#home" aria-label="Wail Elyatime, home">WE</a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <header>
-        <h2>Wail Elyatime</h2>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <div class="hero">
-        <h1>Hi, I'm <span>Wail Elyatime</span></h1>
-        <h3>Cybersecurity Engineering Student</h3>
-        <p>
-            Passionate about cybersecurity, system administration
-            and network security. Welcome to my personal portfolio.
-        </p>
-        <a class="button" href="#projects">Explore My Projects</a>
+<main id="main">
+<section id="home" class="hero wrap">
+  <div class="hero-text">
+    <p class="muted">Marrakech-Safi, Morocco</p>
+    <h1>Wail Elyatime</h1>
+    <p class="headline">Cybersecurity Engineering Student</p>
+    <p class="lead">Third-year engineering student at Université Privée de Marrakech. I build and secure networks, run Windows and Linux systems, and have helped deploy an open-source SOC with Wazuh, Suricata, TheHive and Cortex.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">Explore my projects</a>
+      <a class="btn" href="assets/Wail_Elyatime_CV.pdf" download>Download my CV</a>
+      <a class="btn" href="#contact">Contact me</a>
     </div>
+    <p class="social"><a href="https://www.linkedin.com/in/elyatime-wail-4bb508342/" rel="me noopener" target="_blank">LinkedIn</a><a href="https://github.com/waelelyatime1" rel="me noopener" target="_blank">GitHub</a></p>
+  </div>
+  <aside class="panel soc" aria-label="SOC lab stack from my BC Skills Group internship">
+    <img class="photo" src="assets/images/wail.jpg" width="120" height="120" alt="Portrait of Wail Elyatime">
+    <h2>SOC lab I helped build</h2>
+    <p class="muted small">BC Skills Group internship, 2026. Open-source stack on VMware.</p>
+    <ul>
+      <li><i></i><b>pfSense</b><span>Firewall</span></li>
+      <li><i></i><b>Suricata</b><span>Network intrusion detection</span></li>
+      <li><i></i><b>Wazuh</b><span>Monitoring and detection</span></li>
+      <li><i></i><b>TheHive</b><span>Incident management</span></li>
+      <li><i></i><b>Cortex</b><span>Observable analysis</span></li>
+    </ul>
+  </aside>
+</section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a cybersecurity engineering student interested in
-            protecting systems and networks. I enjoy learning new
-            technologies and developing my technical skills through
-            practical projects and hands-on labs.
-        </p>
-    </section>
+<section id="about" class="wrap sec reveal">
+  <h2>About me</h2>
+  <div class="two">
+    <p>I'm a third-year student in the cybersecurity engineering cycle at the Université Privée de Marrakech (UPM). Before it, I completed a Licence in Computer Engineering at UPM and a BTS in Computer Systems and Networks at Lycée technique Al-Khwârizmî in Safi.</p>
+    <p>Four internships and two academic projects have given me hands-on experience in network security, Windows and Linux administration, and security monitoring. I'm looking to apply this in a professional setting and keep deepening my cybersecurity expertise.</p>
+  </div>
+  <p class="muted">Languages: Arabic (native), French (good command), English (technical).</p>
+</section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills">
-            <div class="card">
-                <h3>Operating Systems</h3>
-                <p>Linux, Windows</p>
-            </div>
-            <div class="card">
-                <h3>Networking</h3>
-                <p>Network fundamentals and network security</p>
-            </div>
-            <div class="card">
-                <h3>Cybersecurity</h3>
-                <p>Security fundamentals and practical labs</p>
-            </div>
-        </div>
-    </section>
+<section id="skills" class="wrap sec reveal">
+  <h2>Technical skills</h2>
+  <div class="grid">
+    <article class="panel"><h3>Cybersecurity and pentesting</h3><p class="tags"><span>Metasploit</span><span>Meterpreter</span><span>Bettercap</span><span>Nmap</span><span>Wireshark</span><span>Zero Trust architecture</span><span>IDS/IPS</span><span>Cryptography</span><span>Web, mobile and IoT security</span></p></article>
+    <article class="panel"><h3>Network security</h3><p class="tags"><span>pfSense</span><span>ACL filtering</span><span>VPN (IPsec, OpenVPN)</span><span>RADIUS (802.1X)</span><span>Suricata</span><span>Wazuh</span><span>TheHive</span><span>Cortex</span></p></article>
+    <article class="panel"><h3>Networking</h3><p class="tags"><span>OSPF, RIP</span><span>VLANs (802.1Q)</span><span>STP/RSTP</span><span>HSRP</span><span>NAT/PAT</span><span>TCP/IP (IPv4/IPv6)</span><span>DNS, DHCP, WDS</span><span>FTP/HTTP/HTTPS</span><span>Samba</span><span>SNMP, Syslog</span><span>Cisco Packet Tracer</span><span>GNS3</span></p></article>
+    <article class="panel"><h3>Systems and virtualization</h3><p class="tags"><span>Windows Server 2008/2022</span><span>Active Directory</span><span>Group Policy (GPO)</span><span>Ubuntu</span><span>Kali Linux</span><span>Windows 11</span><span>VMware Pro</span></p></article>
+    <article class="panel"><h3>Programming and scripting</h3><p class="tags"><span>Bash</span><span>PowerShell</span><span>Python</span><span>.NET</span><span>JavaScript</span><span>Vue.js</span></p></article>
+    <article class="panel"><h3>Databases and tools</h3><p class="tags"><span>MySQL</span><span>SQL Server</span><span>VS Code</span><span>Git, GitHub</span><span>Postman</span><span>Docker</span></p></article>
+  </div>
+</section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="card">
-                <h3>Cybersecurity Labs</h3>
-                <p>Practical cybersecurity exercises and technical learning.</p>
-            </div>
-            <div class="card">
-                <h3>Network Security</h3>
-                <p>Exploring network security concepts and tools.</p>
-            </div>
-        </div>
-    </section>
+<section id="experience" class="wrap sec reveal">
+  <h2>Professional experience</h2>
+  <ol class="timeline">
+    <li><h3>Cybersecurity and SOC Intern</h3><p class="meta">BC Skills Group · Safi, Morocco · 2026 (May to June)</p><p>Set up an open-source SOC in a VMware environment. Deployed and configured Wazuh, Suricata, TheHive and Cortex, integrated a pfSense firewall, and set up monitoring and security incident detection.</p><p class="tags"><span>Wazuh</span><span>Suricata</span><span>TheHive</span><span>Cortex</span><span>pfSense</span><span>VMware</span></p></li>
+    <li><h3>Cybersecurity and IT Intern</h3><p class="meta">OCP Group · Safi, Morocco · 2025 (May to June)</p><p>Designed and deployed a network based on Zero Trust architecture. Integrated IDS/IPS security solutions and handled centralized administration of Windows Server services.</p><p class="tags"><span>Zero Trust</span><span>IDS/IPS</span><span>Active Directory</span><span>DHCP</span><span>DNS</span><span>WDS</span></p></li>
+    <li><h3>System Administration Intern</h3><p class="meta">Marsa Maroc · Safi, Morocco · 2024</p><p>Configured, diagnosed and restored a Dell server running Windows Server 2008. Optimized the existing IT infrastructure and managed network protocols and connections.</p><p class="tags"><span>Windows Server 2008</span><span>Networking</span></p></li>
+    <li><h3>Support and Infrastructure Intern</h3><p class="meta">Dotnet Technology · Safi, Morocco · 2023 (May to June)</p><p>Configured IT equipment and set up and verified communication between machines. Installed video-surveillance systems and repaired and installed IT hardware.</p></li>
+  </ol>
+</section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/elyatime-wail-4bb508342/">
-                Wail Elyatime
-            </a>
-        </p>
-    </section>
+<section id="projects" class="wrap sec reveal">
+  <h2>Academic projects</h2>
+  <div class="grid two-col">
+    <article class="panel proj"><p class="meta">Final-year project (PFE), UPM · 2025</p><h3>Segmented and secured enterprise network</h3><p><b>Objective:</b> Design a robust, segmented and secure enterprise network architecture, validated by simulation in Cisco Packet Tracer.</p><p><b>Technologies:</b></p><p class="tags"><span>VLANs</span><span>STP</span><span>HSRP</span><span>pfSense</span><span>RADIUS</span><span>Windows Server 2022</span><span>Active Directory</span><span>GPO</span><span>Cisco Packet Tracer</span></p></article>
+    <article class="panel proj"><p class="meta">UPM · 2024</p><h3>Local pentest laboratory</h3><p><b>Objective:</b> Configure a virtualized environment and run network attack simulations to test the security of systems.</p><p><b>Technologies:</b></p><p class="tags"><span>Kali Linux</span><span>VMware</span><span>Metasploit</span><span>Nmap</span></p></article>
+  </div>
+  <p class="muted small">Code and write-ups will be added on <a href="https://github.com/waelelyatime1" target="_blank" rel="noopener">GitHub</a> when available.</p>
+</section>
 
-    <footer>
-        <p>© 2026 Wail Elyatime | Cybersecurity Portfolio</p>
-    </footer>
+<section id="certifications" class="wrap sec reveal">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <article class="panel cert"><h3>Cybersecurity Fundamentals Associate</h3><p class="meta">OPSWAT Academy · 2026</p></article>
+    <article class="panel cert"><h3>Introduction to Critical Infrastructure Protection (CIP)</h3><p class="meta">OPSWAT Academy · 2026</p></article>
+    <article class="panel cert"><h3>Cybersecurity Fundamentals</h3><p class="meta">IBM SkillsBuild · 2024</p></article>
+    <article class="panel cert"><h3>CCNA Intermediate: Switching, VLANs and Routing</h3><p class="meta">2024</p></article>
+    <article class="panel cert"><h3>Introduction to Cybersecurity</h3><p class="meta">Cisco Networking Academy · 2023</p></article>
+    <article class="panel cert"><h3>First Aid (Brevet SST)</h3><p class="meta">2023</p></article>
+  </div>
+</section>
 
+<section id="education" class="wrap sec reveal">
+  <h2>Education</h2>
+  <ol class="timeline">
+    <li><h3>Engineering degree, Cybersecurity (3rd year in progress)</h3><p class="meta">Université Privée de Marrakech (UPM) · 2025 to 2027</p></li>
+    <li><h3>Licence, Computer Engineering</h3><p class="meta">Université Privée de Marrakech (UPM) · 2024 to 2025</p></li>
+    <li><h3>BTS, Computer Systems and Networks</h3><p class="meta">Lycée technique Al-Khwârizmî, Safi · 2022 to 2024</p></li>
+    <li><h3>Baccalauréat, Electrical Sciences and Technologies (STE)</h3><p class="meta">Lycée technique Idrissi, Safi · 2021 to 2022</p></li>
+  </ol>
+</section>
+
+<section id="contact" class="wrap sec reveal">
+  <h2>Contact</h2>
+  <p class="lead">Open to internships and opportunities in cybersecurity, network security and systems administration.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:wael.elyatime3@gmail.com">wael.elyatime3@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/elyatime-wail-4bb508342/" target="_blank" rel="me noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/waelelyatime1" target="_blank" rel="me noopener">GitHub</a>
+  </div>
+  <p class="muted">Marrakech-Safi, Morocco</p>
+</section>
+</main>
+
+<footer class="wrap foot"><p>© <span id="y">2026</span> Wail Elyatime</p></footer>
+<a href="#home" class="top" aria-label="Back to top">↑</a>
+<script src="js/script.js" defer></script>
 </body>
 </html>
-
